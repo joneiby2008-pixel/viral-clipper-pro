@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: viral-clipper-pro
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    disk:
+      name: viral-clips
+      mountPath: /app/work
+      sizeGB: 10
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
