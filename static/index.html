@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Viral Clipper Pro</title><link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="wrap">
+  <header><div class="logo">VC</div><div><h1>Viral Clipper Pro</h1><p>Convierte videos largos en clips listos para compartir</p></div></header>
+  <section class="panel">
+    <h2>Crear clips con IA</h2>
+    <label for="url">Enlace del video</label>
+    <input id="url" type="url" placeholder="Pega aquí un enlace de YouTube, TikTok o Kick">
+    <label for="count">Cantidad de clips</label>
+    <select id="count"><option value="3">3 clips</option><option value="1">1 clip</option><option value="5">5 clips</option></select>
+    <button id="go">Detectar momentos virales</button>
+    <p class="hint">Procesa videos accesibles públicamente. Respeta los derechos de autor y las condiciones de cada plataforma.</p>
+    <div id="status" role="status"></div>
+  </section>
+  <section id="results"></section>
+  <footer>Viral Clipper Pro · Herramienta de edición asistida por IA</footer>
+</main>
+<script src="/static/app.js"></script>
+</body></html>
